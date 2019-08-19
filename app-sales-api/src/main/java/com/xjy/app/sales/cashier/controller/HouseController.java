@@ -31,7 +31,7 @@ public class HouseController {
     /**
      * 查询多条House信息
      * @param houseids 主键
-     * @return 1
+     * @return 123
      */
     @RequestMapping("/query/many/{houseids}")
     public Result queryByHouseIds(@PathVariable("houseids") Integer[] houseids) {
