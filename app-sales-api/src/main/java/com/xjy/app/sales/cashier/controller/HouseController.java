@@ -11,7 +11,7 @@ import javax.annotation.Resource;
  * @author lsl
  * @Date:2019/4/21
  * @Time:22:07
- * xian缴费一体机，调用户中心查用户信息，调房屋中心查房屋信息
+ * 缴费一体机，调用户中心查用户信息，调房屋中心查房屋信息
  */
 @RestController
 @RequestMapping("/house")
@@ -22,7 +22,7 @@ public class HouseController {
     /**
      * 查询单条House信息
      * @param houseid 主键
-     * @return
+     * @return 结果
      */
     @RequestMapping("/query/{houseid}")
     public Result queryByHouseId(@PathVariable("houseid") Integer houseid) {
@@ -31,7 +31,7 @@ public class HouseController {
     /**
      * 查询多条House信息
      * @param houseids 主键
-     * @return
+     * @return 结果
      */
     @RequestMapping("/query/many/{houseids}")
     public Result queryByHouseIds(@PathVariable("houseids") Integer[] houseids) {
