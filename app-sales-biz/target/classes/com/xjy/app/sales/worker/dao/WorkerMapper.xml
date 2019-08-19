@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xjy.app.sales.worker.dao.WorkerDAO">
+    <resultMap id="workerResult" type="com.xjy.app.sales.worker.domain.Worker">
+        <result property="workerid" column="workerid" jdbcType="INTEGER"/>
+        <result property="workername" column="workername" jdbcType="VARCHAR"/>
+        <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+        <result property="isdeleted" column="isdeleted" jdbcType="INTEGER"/>
+        <result property="deletetime" column="deletetime" jdbcType="TIMESTAMP"/>
+        <result property="age" column="age" jdbcType="INTEGER"/>
+        <result property="workerno" column="workerno" jdbcType="VARCHAR"/>
+        <result property="arrivaldate" column="arrivaldate" jdbcType="TIMESTAMP"/>
+        <result property="emergencycontact" column="emergencycontact" jdbcType="VARCHAR"/>
+        <result property="educationinfo" column="educationinfo" jdbcType="VARCHAR"/>
+        <result property="securityinfo" column="securityinfo" jdbcType="VARCHAR"/>
+        <result property="departmentid" column="departmentid" jdbcType="INTEGER"/>
+        <result property="worktypeid" column="worktypeid" jdbcType="INTEGER"/>
+        <result property="qrcode" column="qrcode" jdbcType="LONGVARBINARY"/>
+        <result property="imgname" column="imgname" jdbcType="VARCHAR"/>
+    </resultMap>
+
+	<!-- 用于select查询公用抽取的列 -->
+	<sql id="commonColumns">
+	    <![CDATA[
+        	xjy_worker.workerid ,
+        	xjy_worker.workername ,
+        	xjy_worker.createtime ,
+        	xjy_worker.isdeleted ,
+        	xjy_worker.deletetime ,
+        	xjy_worker.age ,
+        	xjy_worker.workerno ,
+        	xjy_worker.arrivaldate ,
+        	xjy_worker.emergencycontact ,
+        	xjy_worker.educationinfo ,
+        	xjy_worker.securityinfo ,
+        	xjy_worker.departmentid ,
+        	xjy_worker.worktypeid ,
+        	xjy_worker.qrcode ,
+        	xjy_worker.imgname 
+	    ]]>
+	</sql>
+	
+    <insert id="insert" parameterType="com.xjy.app.sales.worker.domain.Worker">
+    <![CDATA[
+        INSERT INTO
+        xjy_worker (
+        	workerid ,
+        	workername ,
+        	createtime ,
+        	isdeleted ,
+        	deletetime ,
+        	age ,
+        	workerno ,
+        	arrivaldate ,
+        	emergencycontact ,
+        	educationinfo ,
+        	securityinfo ,
+        	departmentid ,
+        	worktypeid ,
+        	qrcode ,
+        	imgname 
+        ) VALUES (
+        	#{workerid, jdbcType=INTEGER} ,
+        	#{workername, jdbcType=VARCHAR} ,
+        	#{createtime, jdbcType=TIMESTAMP} ,
+        	#{isdeleted, jdbcType=INTEGER} ,
+        	#{deletetime, jdbcType=TIMESTAMP} ,
+        	#{age, jdbcType=INTEGER} ,
+        	#{workerno, jdbcType=VARCHAR} ,
+        	#{arrivaldate, jdbcType=TIMESTAMP} ,
+        	#{emergencycontact, jdbcType=VARCHAR} ,
+        	#{educationinfo, jdbcType=VARCHAR} ,
+        	#{securityinfo, jdbcType=VARCHAR} ,
+        	#{departmentid, jdbcType=INTEGER} ,
+        	#{worktypeid, jdbcType=INTEGER} ,
+        	#{qrcode, jdbcType=LONGVARBINARY} ,
+        	#{imgname, jdbcType=VARCHAR} 
+        )
+    ]]>
+    </insert>
+
+    <update id="update" parameterType="com.xjy.app.sales.worker.domain.Worker">
+    <![CDATA[
+        UPDATE xjy_worker SET
+	        workername = #{workername, jdbcType=VARCHAR} ,
+	        createtime = #{createtime, jdbcType=TIMESTAMP} ,
+	        isdeleted = #{isdeleted, jdbcType=INTEGER} ,
+	        deletetime = #{deletetime, jdbcType=TIMESTAMP} ,
+	        age = #{age, jdbcType=INTEGER} ,
+	        workerno = #{workerno, jdbcType=VARCHAR} ,
+	        arrivaldate = #{arrivaldate, jdbcType=TIMESTAMP} ,
+	        emergencycontact = #{emergencycontact, jdbcType=VARCHAR} ,
+	        educationinfo = #{educationinfo, jdbcType=VARCHAR} ,
+	        securityinfo = #{securityinfo, jdbcType=VARCHAR} ,
+	        departmentid = #{departmentid, jdbcType=INTEGER} ,
+	        worktypeid = #{worktypeid, jdbcType=INTEGER} ,
+	        qrcode = #{qrcode, jdbcType=LONGVARBINARY} ,
+	        imgname = #{imgname, jdbcType=VARCHAR} 
+        WHERE 
+	        workerid = #{workerid, jdbcType=INTEGER} 
+    ]]>
+    </update>
+
+	<sql id="dynamicWhere">
+	    <where>
+	       <if test="workerid != null">
+	             AND xjy_worker.workerid = #{workerid}
+	       </if>
+	       <if test="workername != null">
+	             AND xjy_worker.workername = #{workername}
+	       </if>
+	       <if test="createtime != null">
+	             AND xjy_worker.createtime = #{createtime}
+	       </if>
+	       <if test="isdeleted != null">
+	             AND xjy_worker.isdeleted = #{isdeleted}
+	       </if>
+	       <if test="deletetime != null">
+	             AND xjy_worker.deletetime = #{deletetime}
+	       </if>
+	       <if test="age != null">
+	             AND xjy_worker.age = #{age}
+	       </if>
+	       <if test="workerno != null">
+	             AND xjy_worker.workerno = #{workerno}
+	       </if>
+	       <if test="arrivaldate != null">
+	             AND xjy_worker.arrivaldate = #{arrivaldate}
+	       </if>
+	       <if test="emergencycontact != null">
+	             AND xjy_worker.emergencycontact = #{emergencycontact}
+	       </if>
+	       <if test="educationinfo != null">
+	             AND xjy_worker.educationinfo = #{educationinfo}
+	       </if>
+	       <if test="securityinfo != null">
+	             AND xjy_worker.securityinfo = #{securityinfo}
+	       </if>
+	       <if test="departmentid != null">
+	             AND xjy_worker.departmentid = #{departmentid}
+	       </if>
+	       <if test="worktypeid != null">
+	             AND xjy_worker.worktypeid = #{worktypeid}
+	       </if>
+	       <if test="qrcode != null">
+	             AND xjy_worker.qrcode = #{qrcode}
+	       </if>
+	       <if test="imgname != null">
+	             AND xjy_worker.imgname = #{imgname}
+	       </if>
+	    </where>	
+	</sql>
+	
+	<delete id="delete" parameterType="map">
+        DELETE FROM xjy_worker
+		<include refid="dynamicWhere"/>
+    </delete>
+	 
+    <select id="count" resultType="java.lang.Integer" parameterType="map">
+        SELECT COUNT(1) 
+        FROM xjy_worker
+		<include refid="dynamicWhere"/>    
+    </select>
+    
+    <select id="query" parameterType="map" resultMap="workerResult">
+    	SELECT <include refid="commonColumns"/>
+	    FROM xjy_worker
+		<include refid="dynamicWhere"/>
+    </select>
+
+	<select id="queryByWorkerId" parameterType="integer" resultType="com.xjy.app.sales.worker.domain.Worker">
+		SELECT <include refid="commonColumns"/>
+		FROM xjy_worker
+	    where workerid=#{workerid}
+	</select>
+	
+</mapper>
