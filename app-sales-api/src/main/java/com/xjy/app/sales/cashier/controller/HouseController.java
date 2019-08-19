@@ -22,7 +22,7 @@ public class HouseController {
     /**
      * 查询单条House信息
      * @param houseid 主键
-     * @return 结果集16890
+     * @return 结果集168901
      */
     @RequestMapping("/query/{houseid}")
     public Result queryByHouseId(@PathVariable("houseid") Integer houseid) {
