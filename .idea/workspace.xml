@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6823210a-a2f8-4be5-8536-9625424b3b16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app-sales-api/src/main/java/com/xjy/app/sales/cashier/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-sales-api/src/main/java/com/xjy/app/sales/cashier/controller/HouseController.java" afterDir="false" />
-    </list>
+    <list default="true" id="6823210a-a2f8-4be5-8536-9625424b3b16" name="Default Changelist" comment="" />
     <list id="df379edc-82c7-4c19-81ed-57facff03088" name="Revert &quot;update&quot;" comment="Revert &quot;update&quot;&#10;&#10;This reverts commit 9fc41263" />
     <list id="40c4a054-3ab5-4e40-a275-8f77ab09ad9d" name="Revert &quot;update&quot;-2" comment="Revert &quot;update&quot;&#10;&#10;This reverts commit 39a668d5" />
+    <list id="e544627a-4d1f-428c-a1d3-1e0100514ff5" name="Revert &quot;update&quot;-3" comment="Revert &quot;update&quot;&#10;&#10;This reverts commit 192b917b">
+      <change beforePath="$PROJECT_DIR$/app-sales-api/src/main/java/com/xjy/app/sales/cashier/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-sales-api/src/main/java/com/xjy/app/sales/cashier/controller/HouseController.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/app_sales_api/target/" />
@@ -24,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app-sales-api/src/main/java/com/xjy/app/sales/cashier/controller/HouseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="128">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,7 +58,7 @@
         <entry key="$PROJECT_DIR$" value="12" />
       </map>
     </option>
-    <option name="RESET_MODE" value="HARD" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -140,7 +141,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="6" />
     <option name="width" value="1401" />
     <option name="height" value="1002" />
@@ -363,7 +364,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566220659763" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566221358296" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -452,7 +453,7 @@
       <workItem from="1561725477268" duration="767000" />
       <workItem from="1562724618323" duration="10992000" />
       <workItem from="1566193205435" duration="2850000" />
-      <workItem from="1566215717660" duration="4727000" />
+      <workItem from="1566215717660" duration="5632000" />
     </task>
     <task id="LOCAL-00001" summary="new code">
       <created>1566193435409</created>
@@ -615,15 +616,35 @@
       <option name="project" value="LOCAL" />
       <updated>1566219279400</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update">
+      <created>1566220462878</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1566220462878</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update">
+      <created>1566220515847</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1566220515847</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update11">
+      <created>1566220635444</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1566220635444</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91897000" />
+    <option name="totallyTimeSpent" value="92802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28779304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -725,7 +746,8 @@
     <MESSAGE value="Revert &quot;update&quot;&#10;&#10;This reverts commit 9fc41263" />
     <MESSAGE value="rt" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update11" />
+    <option name="LAST_COMMIT_MESSAGE" value="update11" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -1041,8 +1063,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app-sales-api/src/main/java/com/xjy/app/sales/cashier/controller/HouseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="128">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
