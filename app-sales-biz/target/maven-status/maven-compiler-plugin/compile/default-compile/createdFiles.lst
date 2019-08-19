@@ -1,8 +1,0 @@
-com\xjy\app\sales\worker\dao\WorkerDAO.class
-com\xjy\app\sales\house\service\HouseService.class
-com\xjy\app\sales\worker\domain\Worker.class
-com\xjy\app\sales\worker\service\impl\WorkerServiceImpl.class
-com\xjy\app\sales\worker\service\WorkerService.class
-com\xjy\app\sales\house\delegate\HouseServiceDelegate.class
-com\xjy\app\sales\house\service\impl\HouseServiceImpl.class
-com\xjy\app\sales\house\domain\House.class
